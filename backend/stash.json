@@ -1,0 +1,984 @@
+{
+  "numTabs": 6,
+  "currencyLayout": {
+    "sections": [
+      "general",
+      "influence"
+    ],
+    "layout": {
+      "0": {
+        "section": "general",
+        "x": 308.519269776876,
+        "y": 48.0730223123732,
+        "w": 1,
+        "h": 1
+      },
+      "1": {
+        "section": "general",
+        "x": 68.762677484787,
+        "y": 48.0730223123732,
+        "w": 1,
+        "h": 1
+      },
+      "2": {
+        "section": "general",
+        "x": 462.474645030426,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "3": {
+        "section": "general",
+        "x": 359.026369168357,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "4": {
+        "section": "general",
+        "x": 290.872210953347,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "5": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "6": {
+        "section": "general",
+        "x": 171.602434077079,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "7": {
+        "section": "general",
+        "x": 359.634888438134,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "8": {
+        "section": "general",
+        "x": 16.4300202839757,
+        "y": 109.533468559838,
+        "w": 1,
+        "h": 1
+      },
+      "9": {
+        "section": "general",
+        "x": 68.1541582150101,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "10": {
+        "section": "general",
+        "x": 359.634888438134,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "11": {
+        "section": "general",
+        "x": 239.148073022312,
+        "y": 109.533468559838,
+        "w": 1,
+        "h": 1
+      },
+      "12": {
+        "section": "general",
+        "x": 359.634888438134,
+        "y": 108.924949290061,
+        "w": 1,
+        "h": 1
+      },
+      "13": {
+        "section": "general",
+        "x": 171.602434077079,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "14": {
+        "section": "general",
+        "x": 119.878296146045,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "15": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 48.0730223123732,
+        "w": 1,
+        "h": 1
+      },
+      "16": {
+        "section": "general",
+        "x": 463.083164300203,
+        "y": 48.0730223123732,
+        "w": 1,
+        "h": 1
+      },
+      "17": {
+        "section": "general",
+        "x": 170.993914807302,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1
+      },
+      "18": {
+        "section": "general",
+        "x": 119.269776876268,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1
+      },
+      "19": {
+        "section": "general",
+        "x": 68.762677484787,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1
+      },
+      "20": {
+        "section": "general",
+        "x": 514.19878296146,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "21": {
+        "section": "general",
+        "x": 463.083164300203,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "22": {
+        "section": "general",
+        "x": 514.807302231237,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "23": {
+        "section": "general",
+        "x": 17.0385395537525,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "24": {
+        "section": "general",
+        "x": 17.0385395537525,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "25": {
+        "section": "general",
+        "x": 68.762677484787,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "26": {
+        "section": "general",
+        "x": 410.750507099392,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "27": {
+        "section": "general",
+        "x": 514.19878296146,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "28": {
+        "x": 247.058823529412,
+        "y": 219.066937119676,
+        "w": 2,
+        "h": 4
+      },
+      "30": {
+        "x": 110.750507099391,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "31": {
+        "x": 161.866125760649,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "32": {
+        "x": 213.590263691684,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "33": {
+        "x": 265.922920892495,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "34": {
+        "x": 317.647058823529,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "35": {
+        "section": "general",
+        "x": 161.866125760649,
+        "y": 523.326572008114,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "36": {
+        "section": "general",
+        "x": 213.590263691684,
+        "y": 523.326572008114,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "37": {
+        "section": "general",
+        "x": 265.922920892495,
+        "y": 523.326572008114,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "38": {
+        "section": "general",
+        "x": 359.634888438134,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "39": {
+        "section": "general",
+        "x": 110.750507099391,
+        "y": 523.326572008114,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "40": {
+        "x": 369.371196754564,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "41": {
+        "x": 422.312373225152,
+        "y": 413.793103448276,
+        "w": 1,
+        "h": 1
+      },
+      "42": {
+        "x": 108.924949290061,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "43": {
+        "x": 161.257606490872,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "44": {
+        "x": 213.590263691684,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "45": {
+        "x": 265.922920892495,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "46": {
+        "x": 317.647058823529,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "47": {
+        "x": 369.371196754564,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "48": {
+        "x": 422.312373225152,
+        "y": 468.559837728195,
+        "w": 1,
+        "h": 1
+      },
+      "49": {
+        "section": "general",
+        "x": 462.474645030426,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "50": {
+        "section": "general",
+        "x": 290.872210953347,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "51": {
+        "section": "general",
+        "x": 239.148073022312,
+        "y": 160.649087221095,
+        "w": 1,
+        "h": 1
+      },
+      "52": {
+        "section": "general",
+        "x": 359.634888438134,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "53": {
+        "section": "general",
+        "x": 119.269776876268,
+        "y": 161.257606490872,
+        "w": 1,
+        "h": 1
+      },
+      "54": {
+        "section": "general",
+        "x": 119.878296146045,
+        "y": 109.533468559838,
+        "w": 1,
+        "h": 1
+      },
+      "55": {
+        "section": "general",
+        "x": 514.19878296146,
+        "y": 222.10953346856,
+        "w": 1,
+        "h": 1
+      },
+      "56": {
+        "section": "general",
+        "x": 514.19878296146,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "57": {
+        "section": "general",
+        "x": 462.474645030426,
+        "y": 222.10953346856,
+        "w": 1,
+        "h": 1
+      },
+      "58": {
+        "section": "general",
+        "x": 67.5456389452333,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "59": {
+        "section": "general",
+        "x": 119.269776876268,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "60": {
+        "section": "general",
+        "x": 170.993914807302,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "61": {
+        "section": "influence",
+        "x": 441.176470588235,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "62": {
+        "section": "general",
+        "x": 67.5456389452333,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "63": {
+        "section": "general",
+        "x": 119.269776876268,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "64": {
+        "section": "general",
+        "x": 462.474645030426,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "65": {
+        "section": "general",
+        "x": 170.993914807302,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "66": {
+        "section": "influence",
+        "x": 441.176470588235,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "67": {
+        "section": "influence",
+        "x": 385.192697768763,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "68": {
+        "section": "influence",
+        "x": 385.192697768763,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "69": {
+        "section": "influence",
+        "x": 441.176470588235,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "70": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "71": {
+        "section": "influence",
+        "x": 385.192697768763,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "72": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 223.326572008114,
+        "w": 1,
+        "h": 1,
+        "hidden": true
+      },
+      "73": {
+        "section": "general",
+        "x": 187.423935091278,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "74": {
+        "section": "general",
+        "x": 239.148073022312,
+        "y": 47.4645030425964,
+        "w": 1,
+        "h": 1
+      },
+      "75": {
+        "section": "general",
+        "x": 514.19878296146,
+        "y": 109.533468559838,
+        "w": 1,
+        "h": 1
+      },
+      "76": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "77": {
+        "section": "influence",
+        "x": 88.8438133874239,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "78": {
+        "section": "influence",
+        "x": 145.436105476673,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "79": {
+        "section": "influence",
+        "x": 88.8438133874239,
+        "y": 215.415821501014,
+        "w": 1,
+        "h": 1
+      },
+      "80": {
+        "section": "influence",
+        "x": 145.436105476673,
+        "y": 215.415821501014,
+        "w": 1,
+        "h": 1
+      },
+      "81": {
+        "section": "influence",
+        "x": 88.8438133874239,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "82": {
+        "section": "influence",
+        "x": 145.436105476673,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "83": {
+        "section": "influence",
+        "x": 88.8438133874239,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "84": {
+        "section": "influence",
+        "x": 145.436105476673,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "85": {
+        "section": "influence",
+        "x": 116.83569979716,
+        "y": 281.135902636917,
+        "w": 1,
+        "h": 1
+      },
+      "86": {
+        "section": "influence",
+        "x": 385.192697768763,
+        "y": 226.977687626775,
+        "w": 1,
+        "h": 1
+      },
+      "87": {
+        "section": "influence",
+        "x": 412.576064908722,
+        "y": 282.352941176471,
+        "w": 1,
+        "h": 1
+      },
+      "88": {
+        "section": "influence",
+        "x": 439.350912778905,
+        "y": 226.977687626775,
+        "w": 1,
+        "h": 1
+      },
+      "89": {
+        "section": "influence",
+        "x": 214.807302231237,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "90": {
+        "section": "influence",
+        "x": 265.314401622718,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "91": {
+        "section": "influence",
+        "x": 317.038539553753,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "92": {
+        "section": "influence",
+        "x": 214.807302231237,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "93": {
+        "section": "influence",
+        "x": 265.314401622718,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "94": {
+        "section": "influence",
+        "x": 317.038539553753,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "95": {
+        "section": "influence",
+        "x": 214.807302231237,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "96": {
+        "section": "influence",
+        "x": 265.314401622718,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "97": {
+        "section": "influence",
+        "x": 317.038539553753,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "98": {
+        "section": "influence",
+        "x": 88.8438133874239,
+        "y": 346.247464503043,
+        "w": 1,
+        "h": 1
+      },
+      "99": {
+        "section": "influence",
+        "x": 145.436105476673,
+        "y": 346.247464503043,
+        "w": 1,
+        "h": 1
+      },
+      "100": {
+        "section": "influence",
+        "x": 386.409736308316,
+        "y": 346.247464503043,
+        "w": 1,
+        "h": 1
+      },
+      "101": {
+        "section": "influence",
+        "x": 440.567951318458,
+        "y": 346.247464503043,
+        "w": 1,
+        "h": 1
+      },
+      "102": {
+        "section": "general",
+        "x": 16.4300202839757,
+        "y": 273.833671399594,
+        "w": 1,
+        "h": 1
+      },
+      "103": {
+        "section": "general",
+        "x": 16.4300202839757,
+        "y": 324.949290060852,
+        "w": 1,
+        "h": 1
+      },
+      "104": {
+        "section": "general",
+        "x": 16.4300202839757,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1
+      },
+      "105": {
+        "section": "general",
+        "x": 411.359026369168,
+        "y": 222.718052738337,
+        "w": 1,
+        "h": 1
+      },
+      "106": {
+        "section": "influence",
+        "x": 26.7748478701826,
+        "y": 51.7241379310345,
+        "w": 1,
+        "h": 1
+      },
+      "107": {
+        "section": "influence",
+        "x": 26.7748478701826,
+        "y": 105.2738336714,
+        "w": 1,
+        "h": 1
+      },
+      "108": {
+        "section": "influence",
+        "x": 26.7748478701826,
+        "y": 159.432048681542,
+        "w": 1,
+        "h": 1
+      },
+      "109": {
+        "section": "influence",
+        "x": 26.7748478701826,
+        "y": 215.415821501014,
+        "w": 1,
+        "h": 1
+      },
+      "110": {
+        "section": "influence",
+        "x": 26.7748478701826,
+        "y": 268.965517241379,
+        "w": 1,
+        "h": 1
+      }
+    }
+  },
+  "items": [
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9SYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f0dc27cd7c/CurrencyUpgradeToRare.png",
+      "stackSize": 17,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "23c10047802b7a6c896377befad45a6b335f21489d34d1694d79efddf0a3a23c",
+      "name": "",
+      "typeLine": "Orb of Alchemy",
+      "baseType": "Orb of Alchemy",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "17/20",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Upgrades a normal item to a rare item"
+      ],
+      "descrText": "Right click this item then left click a normal item to apply it.",
+      "frameType": 5,
+      "x": 5,
+      "y": 0,
+      "inventoryId": "Stash6"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlVG9NYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/130762c82d/CurrencyUpgradeToMagic.png",
+      "stackSize": 330,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "c37d0f5633e0a234bd6da1edeab3156c12c14511918163b3efd07e526c551f60",
+      "name": "",
+      "typeLine": "Orb of Transmutation",
+      "baseType": "Orb of Transmutation",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "330/40",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Upgrades a normal item to a magic item"
+      ],
+      "descrText": "Right click this item then left click a normal item to apply it.",
+      "frameType": 5,
+      "x": 8,
+      "y": 0,
+      "inventoryId": "Stash6"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxNYWdpYyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/28212545fd/CurrencyRerollMagic.png",
+      "stackSize": 13,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "d916b78a816f0b8a2d458ca0f187836bc719cdc961f8ad22747f081f4718ad69",
+      "name": "",
+      "typeLine": "Orb of Alteration",
+      "baseType": "Orb of Alteration",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "13/20",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Reforges a magic item with new random modifiers"
+      ],
+      "descrText": "Right click this item then left click a magic item to apply it.",
+      "frameType": 5,
+      "x": 9,
+      "y": 0,
+      "inventoryId": "Stash6"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lVcGdyYWRlUmFuZG9tbHkiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/eaeece27be/CurrencyUpgradeRandomly.png",
+      "stackSize": 16,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "1f91ae42a2d5b3d392426bffbc11657807e0f0f583699b644647f536ea62167d",
+      "name": "",
+      "typeLine": "Orb of Chance",
+      "baseType": "Orb of Chance",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "16/20",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Upgrades a normal item to a random rarity"
+      ],
+      "descrText": "Right click this item then left click a normal item to apply it.",
+      "frameType": 5,
+      "x": 6,
+      "y": 0,
+      "inventoryId": "Stash6"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lBZGRNb2RUb01hZ2ljIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1a6cb2ad17/CurrencyAddModToMagic.png",
+      "stackSize": 24,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "f49190609ed2aecccd6261ae87b9dabf85ec409290b0b9bc34169b75d8140261",
+      "name": "",
+      "typeLine": "Orb of Augmentation",
+      "baseType": "Orb of Augmentation",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "24/30",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Augments a magic item with a new random modifier"
+      ],
+      "descrText": "Right click this item then left click a magic item to apply it. Magic items can have up to two random modifiers.",
+      "frameType": 5,
+      "x": 13,
+      "y": 0,
+      "inventoryId": "Stash6"
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQ3VycmVuY3lSZXJvbGxSYXJlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d119a0d734/CurrencyRerollRare.png",
+      "stackSize": 198,
+      "maxStackSize": 5000,
+      "league": "Settlers",
+      "id": "a91f380fcd11b211e681c4caed957b2b28b9351fbaa8424295941f7379e9c427",
+      "name": "",
+      "typeLine": "Chaos Orb",
+      "baseType": "Chaos Orb",
+      "ilvl": 0,
+      "identified": true,
+      "properties": [
+        {
+          "name": "Stack Size",
+          "values": [
+            [
+              "198/20",
+              0]
+          ],
+          "displayMode": 0,
+          "type": 32
+        }
+      ],
+      "explicitMods": [
+        "Reforges a rare item with new random modifiers"
+      ],
+      "descrText": "Right click this item then left click a rare item to apply it.",
+      "frameType": 5,
+      "x": 2,
+      "y": 0,
+      "inventoryId": "Stash6"
+    }
+  ]
+}

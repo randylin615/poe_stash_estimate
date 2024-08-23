@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poe_stash_estimate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://webtw.poecdn.com/protected/image/layout/settlersofkalguur-bg.jpg?v=1723528117049&key=iTGamUssLclxKShOx2gEuw') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0d4a3;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1800px;
+            margin: auto;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #ffd323;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #ffcc00;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            color: #e0d4a3;
+            border-top: 2px solid #ffcc00;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            display: flex;
+            /* 使用 flexbox 來對齊內容 */
+            flex-direction: column;
+            /* 垂直排列內容 */
+            align-items: center;
+            /* 水平置中 */
+        }
+
+        .responsive-image {
+            width: 100%;
+            /* 寬度為容器的 100% */
+            height: 70%;
+            /* 設定固定高度 */
+            object-fit: contain;
+            /* 確保圖片覆蓋整個容器且不變形 */
+        }
+
+        .image-caption {
+            margin: 5px;
+            font-size: 1.8rem;
+            /* 使用 vw 單位 */
+        }
+
+        .github-icon {
+            font-size: 24px;
+            color: #ffcc00;
+            margin-left: 15px;
+        }
+
+        .github-icon:hover {
+            color: #c9c8c4;
+        }
+
+        .interactive-image {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .interactive-image.selected {
+            border-color: #ffcc00;
+        }
+
+        .unsupported-items {
+            overflow-y: auto;
+            max-height: 100px;
+            padding: 10px;
+            word-wrap: break-word;
+            white-space: normal;
+            max-width: 100%;
+        }
+
+        .img-container {
+            position: relative;
+            /* 使子元素可以絕對定位 */
+            display: inline-block;
+            /* 使圖片容器並排顯示 */
+        }
+
+        .quantity-label {
+            position: absolute;
+            /* 絕對定位 */
+            bottom: 5px;
+            /* 距離底部 */
+            right: 5px;
+            /* 距離右側 */
+            background-color: rgba(0, 0, 0, 0.7);
+            /* 半透明背景 */
+            color: white;
+            /* 字體顏色 */
+            padding: 2px 5px;
+            /* 內邊距 */
+            border-radius: 3px;
+            /* 圓角 */
+            font-size: 1rem;
+            /* 字體大小 */
+        }
+
+
+        button {
+            background-color: #2a2a2a;
+            color: #e0d4a3;
+            border: 2px solid #4d4d4d;
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            display: block;
+            margin: 5px auto 0;
+        }
+
+        button:hover {
+            background-color: #3a3a3a;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        button:active {
+            background-color: #1a1a1a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #jsonInput {
+            background-color: #2a2a2a;
+            color: #e0d4a3;
+            border: 2px solid #4d4d4d;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            font-size: 16px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            resize: none;
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #jsonInput::placeholder {
+            color: #a7a7a7;
+            opacity: 0.8;
+        }
+
+        #output {
+            display: flex;
+            flex-wrap: wrap;
+            /* 允許換行 */
+            justify-content: flex-start;
+            /* 左對齊 */
+            margin-top: 20px;
+            /* 提供與上方內容的間距 */
+        }
+
+        .output-container {
+            display: flex;
+            /* 使用彈性佈局 */
+            flex-wrap: wrap;
+            /* 允許換行 */
+            gap: 10px;
+            /* 圖片間距 */
+        }
+
+        #totalValue {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ffcc00;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .image-caption {
+                font-size: 1.3rem;
+                /* 調整字體大小 */
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .header,
+            .footer {
+                padding: 5px;
+                font-size: 0.8em;
+            }
+
+            .container {
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .image-caption {
+                font-size: 1.2rem;
+                /* 調整字體大小 */
+            }
+        }
+    </style>
+</head>
+
+<body id="app">
+
+    <div class="header">
+        <h1>UNOFFICIAL Path of Exile Stash Estimate</h1>
+        <a href="https://github.com/randylin615" target="_blank" class="github-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <!-- <h2 style="text-align:center">{{ message }}</h2><br>
+        <button @click="greet">Greet</button> -->
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img :src="apiUrl + 'item/img/eg_pic1'" alt="eg_pic1" class="responsive-image">
+                <p class="image-caption">
+                    1.開啟PoE官網、F12切換至網路活動，並擷取Fetch/XHR<br>
+                    2.點擊頭像選擇腳色，至欲估計的倉庫頁取得GGG的API request
+                </p>
+            </div>
+            <div class="image-wrapper">
+                <img :src="apiUrl + 'item/img/eg_pic2'" alt="eg_pic2" class="responsive-image">
+                <p class="image-caption">
+                    3.雙擊get(-guild)-stash開啟本圖頁面<br>
+                    4.點擊美化排版，並Ctrl+A全選後複製到下方輸入欄
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <textarea id="jsonInput" rows="10" cols="50" placeholder="請在此處貼上JSON數據"></textarea>
+        <br>
+        <button onclick="parseJson()">上傳</button>
+        <div id="outputContainer" class="output-container">
+            <!-- 圖片將在此生成 -->
+        </div>
+        <button id="selectAllBtn" onclick="toggleSelectAll()">全選</button>
+        <button id="calculateBtn" onclick="calculateTotal()">計算</button>
+        <p id="totalValue"></p>
+    </div>
+
+
+
+    <div class="footer">
+        Made by randylin615, 2024
+    </div>
+
+
+    <script>
+        const { createApp, ref } = Vue;
+        const apiUrl = "";
+        createApp({
+            setup() {
+
+                const message = ref("");
+
+                axios.get(apiUrl)
+                    .then(function (response) {
+                        // 处理成功情况
+                        console.log(response);
+                        message.value = response.data.message;
+                    });
+
+                const greet = () => {
+                    alert('Hello!');
+                };
+
+                return { apiUrl, message, greet };
+            }
+        }).mount('#app');
+
+        let allSelected = false;
+
+        function toggleSelectAll() {
+            const images = document.querySelectorAll('.interactive-image');
+            allSelected = !allSelected;
+            images.forEach(img => img.classList.toggle('selected', allSelected));
+            document.getElementById('selectAllBtn').textContent = allSelected ? '取消全選' : '全選';
+        }
+
+        function calculateTotal() {
+            const selectedItems = [];
+            document.querySelectorAll('.interactive-image.selected').forEach(img => {
+                const item = JSON.parse(img.dataset.item);
+                selectedItems.push(item);
+            });
+
+            let totalValue = 0;
+            const pricePromises = selectedItems.map(item => {
+                return fetch(`${apiUrl}item/price/${encodeURIComponent(item["typeLine"])}`)
+                    .then(response => response.json())
+                    .then(priceData => {
+                        totalValue += parseFloat(priceData.price) * parseFloat(item["properties"][0]["values"][0][0].split("/")[0]);
+                    });
+            });
+
+            const divinePricePromise = fetch(`${apiUrl}item/price/Divine Orb`)
+                .then(response => response.json())
+                .then(divinePriceData => {
+                    divinePrice = divinePriceData.price;
+                });
+
+            Promise.all([...pricePromises, divinePricePromise]).then(() => {
+                const chaosToDivineRatio = 1 / divinePrice;
+                const totalDivineValue = totalValue * chaosToDivineRatio;
+
+                document.getElementById('totalValue').innerHTML = `
+        總價: ${totalValue} <img src="${apiUrl}item/img/Chaos Orb" alt="混沌石" style="width: 50px; height: 50px;">
+        (${totalDivineValue.toFixed(2)} <img src="${apiUrl}item/img/Divine Orb" alt="神聖石" style="width: 50px; height: 50px;">)
+    `;
+            });
+        }
+
+        function parseJson() {
+            const jsonText = document.getElementById('jsonInput').value;
+            try {
+                const reData = JSON.parse(jsonText);
+                const items = reData["items"];
+                const outputContainer = document.getElementById('outputContainer');
+                outputContainer.innerHTML = ''; // 清空內容
+
+                const unsupportedItems = [];
+                const fetchPromises = items.map(item => {
+                    const name = item["typeLine"];
+                    const quantity = parseFloat(item["properties"][0]["values"][0][0].split("/")[0]); // 獲取數量
+                    const imgName = encodeURIComponent(name);
+                    return fetch(`${apiUrl}item/img/${imgName}`)
+                        .then(response => {
+                            if (!response.ok) {
+                                unsupportedItems.push(item.name);
+                                return null;
+                            }
+                            return response.blob();
+                        })
+                        .then(blob => {
+                            if (blob) {
+                                const imgUrl = URL.createObjectURL(blob);
+                                const imgContainer = document.createElement('div'); // 創建一個容器來包裹圖片和數量
+                                imgContainer.classList.add('img-container'); // 添加樣式類
+
+                                const img = document.createElement('img');
+                                img.src = imgUrl;
+                                img.alt = item.name;
+                                img.classList.add('interactive-image');
+                                img.dataset.item = JSON.stringify(item);
+                                img.onclick = () => img.classList.toggle('selected');
+
+                                const quantityLabel = document.createElement('span'); // 創建數量標籤
+                                quantityLabel.textContent = quantity; // 設置數量
+                                quantityLabel.classList.add('quantity-label'); // 添加樣式類以便於樣式化
+
+                                // 將圖片和數量標籤添加到容器中
+                                imgContainer.appendChild(img);
+                                imgContainer.appendChild(quantityLabel);
+                                outputContainer.appendChild(imgContainer);
+                            }
+                        });
+                });
+
+                Promise.all(fetchPromises).then(() => {
+                    if (unsupportedItems.length > 0) {
+                        const message = document.createElement('p');
+                        message.textContent = `不支援 ${unsupportedItems.join(', ')}`;
+                        outputContainer.appendChild(message);
+                    }
+                });
+            } catch (error) {
+                alert("輸入錯誤");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

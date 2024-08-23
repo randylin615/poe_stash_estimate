@@ -1,0 +1,9 @@
+frontend/vue-fastapi.html
+frontend/poe_stash.html
+backend/__pycache__/database.cpython-39.pyc
+backend/__pycache__/main.cpython-39.pyc
+backend/__pycache__/models.cpython-39.pyc
+backend/__pycache__/update.cpython-39.pyc
+frontend/work_poe_stash_est.html
+backend/word_main.py
+backend/work_database.py
