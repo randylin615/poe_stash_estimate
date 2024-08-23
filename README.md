@@ -68,4 +68,6 @@ ex:
 
 [FastAPI + SQLAlchemy+PostgreSQL — FastAPI的ORM](https://medium.com/@King610160/fastapi-sqlalchemy-postgresql-fastapi的orm-00818bc63106) Tako大的筆記
 
+救了我很多前端問題的ChatGPT
+
 
