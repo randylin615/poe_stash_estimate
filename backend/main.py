@@ -43,39 +43,39 @@ app.add_middleware(
 )
 
 
-@app.get("/")
-async def main(db:db_dependency):
+@app.get("/api")
+async def main():
     message = "testt"
     return {"message": message}
 
 
-@app.post('/user_inform/{user_id}/{stash}')
-async def add_user_data(user_id:str, stash:int, db:db_dependency):
-    existing_user = db.query(models.User).filter(models.User.name == user_id).first()
+@app.post('/api/users_inform/{user_name}/{stash}')
+async def add_user_data(user_name:str, stash:int, db:db_dependency):
+    existing_user = db.query(models.User).filter(models.User.name == user_name).first()
     if not existing_user:
-        db_user = models.User(name = user_id)
+        db_user = models.User(name = user_name)
         db.add(db_user)
 
-    db_userdata = models.UserData(username = user_id, stash1 = stash)
+    db_userdata = models.UserData(user_name = user_name, stash1 = stash)
     db.add(db_userdata)
 
     db.commit()
     return db_userdata
 
-@app.get('/item/img/{item_name}')
+@app.get('/api/items/img/{item_name}')
 async def get_item_img(item_name:str, db:db_dependency):
     item = db.query(models.Item).filter(models.Item.item_name == item_name).first()
     return Response(content=item.img, media_type="image/png") 
 
-@app.get('/item/price/{item_name}')
+@app.get('/api/items/price/{item_name}')
 async def get_item_price(item_name:str, db:db_dependency):
     item = db.query(models.Item).filter(models.Item.item_name == item_name).first()
     return {"price":max(item.price_buy, item.price_sell)}
 
 
 
-@app.get('/update/all')
-async def update_all(db:db_dependency):
+@app.post('/api/items/price')
+async def update_all_item_price(db:db_dependency):
     rune = update.get_rune()
     curr = update.get_curr()
     
@@ -91,4 +91,4 @@ async def update_all(db:db_dependency):
             temp.price_sell = i[1]
             temp.price_buy = i[2]
             db.commit()
-    return ("Done!", i[0])
+    return ("Update Done")

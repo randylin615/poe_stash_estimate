@@ -28,7 +28,7 @@ ex:
 3. 修改 `/frontend/poe_stash_est.html` 中FastAPI的URL，此處須和後續uvicorn host的ip相同   
 >`const apiUrl = "";`  
 ex:
-`const apiUrl = "http://127.0.0.1:8000/"`
+`const apiUrl = "http://127.0.0.1:8000/api/"`
 
 4. 進入虛擬環境  
 `$.\poe_stash_estimate\.venv\Scripts\activate`

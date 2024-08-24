@@ -19,7 +19,7 @@ class UserData(Base):
     __tablename__= 'UsersData'
 
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, ForeignKey('Users.name'))
+    user_name = Column(String, ForeignKey('Users.name'))
     time = Column(DateTime, default=datetime.datetime.now)
     stash1 = Column(Integer)
 
