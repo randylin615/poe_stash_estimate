@@ -1,11 +1,20 @@
 # poe_stash_estimat   一個用來估計PoE倉庫/公倉價值的小小應用
-### FastAPI + Vue CDN + PostgreSQL(SQLAlchemy)
+**FastAPI + Vue CDN + PostgreSQL(SQLAlchemy)**
 </br> 
 
 ## 注意事項
-### 目前僅針對單頁倉庫，並以ninja網賣方價格計算價值。
-### 計價之物品初版僅有通貨及符文。
+目前僅針對單頁倉庫，並以ninja網賣方價格計算價值。
+
+計價之物品初版僅有通貨及符文。
 </br>
+
+## 後續更新方向
+- [ ] BUG_一般裝備被讀取時error
+- [ ] 加入物品(ex:催化劑、油瓶等)
+- [ ] 部署至GCP Cloud Run
+- [ ] 帳號歷史紀錄
+- [ ] API整理(CRUD分離)
+
 
 ## 安裝/啟動方法
 請先自行完成postgreSQL安裝，[此處](https://github.com/randylin615/poe_stash_estimate/blob/main/sundries/Items.csv)有提供可直接導入的table。
@@ -56,12 +65,7 @@ ex:
     </div>
 </div>
 
-## 後續更新方向
-- [ ] BUG_一般裝備被讀取時error
-- [ ] 加入物品(ex:催化劑、油瓶等)
-- [ ] 部署至GCP Cloud Run
-- [ ] 帳號歷史紀錄
-- [ ] API整理(CRUD分離)
+
 </br>  
 
 ## 特別感謝 
