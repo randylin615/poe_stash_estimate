@@ -1,5 +1,6 @@
 # poe_stash_estimat   一個用來估計PoE倉庫/公倉價值的小小應用
-**FastAPI + Vue CDN + PostgreSQL(SQLAlchemy)**
+**FastAPI + Vue CDN + PostgreSQL(SQLAlchemy)**  
+**[可搭配服用](https://www.cakeresume.com/portfolios/web-poe_stash_estimate)**
 </br> 
 
 ## 注意事項
